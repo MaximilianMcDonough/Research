@@ -4,8 +4,9 @@ from string import punctuation
 from collections import Counter
 from heapq import nlargest
 
-
+# extractive sumerazation
 def sumerize(text, sentinceNum):
+	# load english lan
 	nlp = spacy.load('en_core_web_sm')
 
 	doc = nlp(text)
@@ -21,7 +22,7 @@ def sumerize(text, sentinceNum):
 
 	freq_word = Counter(keyword)
 
-
+	#determins sentinces bassed on frequency
 	max_freq = Counter(keyword).most_common(1)[0][1]
 	for word in freq_word.keys():  
 	        freq_word[word] = (freq_word[word]/max_freq)
@@ -43,4 +44,5 @@ def sumerize(text, sentinceNum):
 	final_sentences = [ w.text for w in summarized_sentences ]
 	summary = ' '.join(final_sentences)
 	
+	#returns best summerized text
 	return summary
