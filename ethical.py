@@ -1,14 +1,17 @@
 from WikiPages import *
 import Sumarazation as sum
 
-topic = 'herodotus'
+# the topic that you want to research
+topic = 'golf'
 
+# gets the information
 wikipedia = Wikipedia(topic)
 wikiquote = Wikiquote(topic)
 wikisource = Wikisource(topic)
 wiktionary = Wiktionary(topic)
 isbn = ISBNSearch(topic)
 
+# formats the information
 overview = sum.sumerize(wikipedia.getText(), 5)
 definitions = wiktionary.getDefs()
 testimonials = wikiquote.getQuotes()
@@ -19,6 +22,7 @@ statistics = 'https://unstats.un.org/UNSDWebsite'
 mainPoints = wikipedia.getHeaders()
 humor = ''
 
+# prints out the information
 def printReasearch():
 	print(topic)
 	print()
