@@ -1,7 +1,7 @@
 # Research
 
 ## Project Aim
-The aim of this project is to make reasrching more efficient and effctive by looking at lots of article on a sepcified topic and splitting up the information into catigories.
+It is the objective of this project to make research more efficient and effective by reviewing a large number of articles on a specific topic and categorizing the information accordingly.
 
 ## How to use
-At the moment there is no user interface. So, in the ethical class you just set the topic variable to the name of the topic you want to research and it will return information on the topic.
+As of now, there is no user interface. Therefore, in the ethical class, you can simply specify the topic variable as the name of the topic you wish to research, and it will return information about that topic. Although it is not yet a completed project, it is fairly accurate most of the time.
